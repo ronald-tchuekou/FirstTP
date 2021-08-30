@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FirstTP</string>
+    <string name="home_label">Home</string>
+    <string name="search_label">Search</string>
+    <string name="cart_label">Cart</string>
+    <string name="more_label">More</string>
+    <string name="home_title">Feature</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="_18_items_listed">18 Items listed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meta_earrings">Meta Earrings</string>
+    <string name="_12">$12</string>
+    <string name="special_design">Special Design</string>
+    <string name="_3_items">3 items</string>
+    <string name="select_all">Select all</string>
+    <string name="delete_selected">Delete selected</string>
+    <string name="check_out">Check out</string>
+    <string name="in_stock">30 in stock</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="complete_information">Compléter les informations de votre compte pour la facilitation de vos achats.</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_surname">First name</string>
+    <string name="prompt_email_facultatif">Email address</string>
+    <string name="validate">Valider</string>
+    <string name="transition_image_name">ProductImageDescription</string>
+    <string name="description_of_product">Description of product</string>
+</resources>
