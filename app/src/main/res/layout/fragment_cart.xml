@@ -105,14 +105,14 @@
         android:layout_marginBottom="@dimen/text_spacing"
         android:paddingHorizontal="5dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/checkout_btn_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView"
         tools:listitem="@layout/layout_item_home" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/checkout_btn_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/check_out"

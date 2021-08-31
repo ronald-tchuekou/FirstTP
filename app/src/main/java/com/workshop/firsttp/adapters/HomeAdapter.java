@@ -12,7 +12,6 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.workshop.firsttp.R;
-import com.workshop.firsttp.databinding.LayoutItemHomeBinding;
 import com.workshop.firsttp.models.Product;
 
 import java.util.ArrayList;
@@ -64,18 +63,16 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeItemHolder
 
     static class HomeItemHolder extends RecyclerView.ViewHolder{
 
-        LayoutItemHomeBinding item_ui;
         ImageView product_image;
         TextView name, description, price;
 
         public HomeItemHolder(@NonNull View itemView, OnHomeItemClickListener listener) {
             super(itemView);
-            item_ui = LayoutItemHomeBinding.bind(itemView);
 
-            product_image = item_ui.productImgId;
-            name = item_ui.productNameId;
-            description = item_ui.productDescriptionId;
-            price = item_ui.productPriceId;
+            product_image = itemView.findViewById(R.id.product_img_id);
+            name = itemView.findViewById(R.id.product_name_id);
+            description = itemView.findViewById(R.id.product_description_id);
+            price = itemView.findViewById(R.id.product_price_id);
 
             itemView.setOnClickListener(v -> {
                 int position = getAdapterPosition();

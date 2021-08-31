@@ -1,5 +1,6 @@
 package com.workshop.firsttp.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.workshop.firsttp.R;
+import com.workshop.firsttp.activities.CheckoutActivity;
 import com.workshop.firsttp.adapters.CartAdapter;
 import com.workshop.firsttp.databinding.FragmentCartBinding;
 import com.workshop.firsttp.models.Product;
@@ -23,6 +25,8 @@ import com.workshop.firsttp.models.Product;
  * create an instance of this fragment.
  */
 public class FragmentCart extends FragmentHome {
+
+    public static final String EXTRA_CART_CONTENT = "extra_cart_content";
 
     FragmentCartBinding frag_ui;
     RecyclerView cart_rec;
@@ -78,6 +82,11 @@ public class FragmentCart extends FragmentHome {
         });
 
         frag_ui.backId.setOnClickListener(v -> scrollListener.onBack());
+        frag_ui.checkoutBtnId.setOnClickListener(v -> {
+            Intent intent = new Intent(requireContext(), CheckoutActivity.class);
+            intent.putExtra(EXTRA_CART_CONTENT, new Product[]{new Product()});
+            startActivity(intent);
+        });
     }
 
     public void setContent(){

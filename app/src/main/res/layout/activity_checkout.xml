@@ -66,21 +66,47 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/checkout_content_recycler_id"
-                tools:listitem="@layout/layout_item_checkout"
-                tools:itemCount="2"
-                android:scrollbars="none"
-                android:layout_marginTop="@dimen/text_spacing"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_spacing"
+                android:scrollbars="none"
+                tools:itemCount="2"
+                tools:listitem="@layout/layout_item_checkout" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Shipping Address"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                 android:padding="@dimen/default_margin"
-                />
+                android:text="Shipping Address"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 
+            <LinearLayout
+                android:paddingHorizontal="@dimen/default_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:textColor="@color/dark"
+                    android:textSize="17sp"
+                    android:text="Adresse de livraison du colli." />
+
+                <RadioGroup
+                    android:layout_gravity="end"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                </RadioGroup>
+            </LinearLayout>
 
 
         </LinearLayout>

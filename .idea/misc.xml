@@ -19,7 +19,7 @@
         <entry key="app/src/main/res/drawable/ic_shop.xml" value="0.23333333333333334" />
         <entry key="app/src/main/res/drawable/ic_sort.xml" value="0.2713541666666667" />
         <entry key="app/src/main/res/drawable/test_home.xml" value="0.225" />
-        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_product.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_cart.xml" value="0.21" />
